@@ -27,7 +27,7 @@ ssh xilinx@192.168.2.99   # default PYNQ IP
 
 # Clone this repo into the Jupyter notebooks directory
 cd /home/xilinx/jupyter_notebooks
-git clone https://github.com/your-username/rfsoc_replay_buf.git
+git clone https://github.com/lilyliu-nu/rfsoc_replay_buffer.git
 cd rfsoc_replay_buf
 
 # Install the driver
