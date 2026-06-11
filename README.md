@@ -141,20 +141,6 @@ Control signals are crossed between domains using a toggle synchroniser (`ctrl_w
 
 ---
 
-## Interrupt
-
-The IP asserts a one-cycle pulse on `irq` when a finite replay completes. This is connected to the PS GIC via `xlconcat` in the block design. The interrupt is in the `clk_dac0` domain.
-
-To use the interrupt from PYNQ:
-
-```python
-# Not yet implemented in the driver — poll STATUS[1] instead
-while not (rb._mmio.read(0x08) & 0x02):
-    time.sleep(0.01)
-```
-
----
-
 ## Python Driver
 
 See `replay_buffer.py`. Quick reference:
