@@ -77,13 +77,9 @@ assign_bd_address \
     -force
 ```
 
-### Your replay_buf_top IP
+### replay_buf_top IP
 
-No changes required. The SG DMA still presents the same `M_AXIS_MM2S`
-AXI4-Stream output. Your replay buffer still sits between that stream
-and the rfdc input. The BRAM passthrough/replay logic is irrelevant
-for the SG use case — you would simply keep the buffer in passthrough
-mode permanently and let the SG ring handle repetition.
+Simply keep the buffer in passthrough mode permanently and let the SG ring handle repetition.
 
 ---
 
