@@ -21,10 +21,14 @@ Designed for integration with the
 
 ### On the board
 
-```bash
-# SSH into the board
-ssh xilinx@192.168.2.99   # default PYNQ IP
+Drag and Drop via JupyterLab 
+1. Open a web browser and navigate to the JupyterLab interface:
+   `http://<board_ip_address>:9090/lab` (Default password is `xilinx`).
+2. In the Jupyter file browser on the left, navigate to the directory where you want to store your files (e.g., the `jupyter_notebooks` folder or a new subfolder).
+3. Open your local file explorer and drag and drop strath_sdr_test.ipynb, replay_buffer.py, replay_rfsoc_radio.bit, and replay_rfsoc_radio.hwh files directly into the JupyterLab file browser window.
 
+Install via Ethernet.  
+```bash
 # Clone this repo into the Jupyter notebooks directory
 cd /home/xilinx/jupyter_notebooks
 git clone https://github.com/lilyliu-nu/rfsoc_replay_buffer.git
