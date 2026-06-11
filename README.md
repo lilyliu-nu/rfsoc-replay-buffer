@@ -38,7 +38,7 @@ cd rfsoc_replay_buf
 pip install -e driver/
 ```
 
-Open JupyterLab at `http://192.168.2.99` and navigate to `notebooks/`.
+Open JupyterLab at `http://<ip_address>` and navigate to `notebooks/`.
 
 ---
 
